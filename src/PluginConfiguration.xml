@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <plugin displayName="TestPlugin" />
+
+  <modes>
+    <mode name="Main" />
+  </modes>
+
+  <actions>
+    <group displayName="Edit">
+      <command name="Undo" description="Undo the last action" />
+    </group>
+    <group displayName="Adjustments">
+      <adjustment name="Contrast" description="Modify image contrast" />
+    </group>
+
+    <layouts>
+      <layout>
+        <!-- Edit -->
+        <command name="Undo" defaultControls="Undo" />
+        <!-- Adjustments -->
+        <adjustment name="Contrast" defaultControls="Contrast" />
+      </layout>
+    </layouts>
+
+  </actions>
+</configuration>
