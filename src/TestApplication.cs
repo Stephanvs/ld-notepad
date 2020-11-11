@@ -1,16 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Loupedeck;
 
 namespace TestPlugin
 {
-    public class TestApplication : ClientApplication
+    public class AfterEffectsApplication : ClientApplication
     {
         protected override string GetProcessName() => "Notepad";
 
         protected override string GetBundleName() => string.Empty;
+
+        public override void Activate()
+        {
+            base.Activate();
+        }
+
+        public override void Start()
+        {
+            base.Start();
+        }
     }
 }
